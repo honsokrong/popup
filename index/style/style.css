@@ -34,11 +34,14 @@ body{
     width: 450px;
     padding: 6px 8px;
     background-color: rgb(242, 242, 242);
-    padding: 4px 6px;
-    overflow: hidden;
+    /* padding: 4px 6px; */
+    /* overflow: hidden; */
     display: none;
+    transition: 0.5s;
+    /* z-index: 11; */
+    /* position: relative; */
 } 
-div.active{
+.container > div.active{
     display: block;
 }
 .container > .modal > .model-header{
@@ -82,8 +85,9 @@ div.active{
     color: white;
     border-radius: 4px;
     margin-left: 8px;
-    display: flex;
+    /* display: flex; */
 }
+/* Underline when mouse Over */
 .container > .modal > .modal-footer > a:hover{
     text-decoration: underline;
 }
@@ -93,9 +97,11 @@ div.active{
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 1, 0.613);
+    background-color: rgba(177, 207, 9, 0.325);
     display: none;
+    z-index: -1;
 }
+/* active */
 div.active{
     display: block;
 }
