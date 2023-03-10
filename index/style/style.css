@@ -36,7 +36,11 @@ body{
     background-color: rgb(242, 242, 242);
     padding: 4px 6px;
     overflow: hidden;
+    display: none;
 } 
+div.active{
+    display: block;
+}
 .container > .modal > .model-header{
     display: flex;
     justify-content: space-between;
@@ -82,4 +86,16 @@ body{
 }
 .container > .modal > .modal-footer > a:hover{
     text-decoration: underline;
+}
+
+/* Overlay */
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 1, 0.613);
+    display: none;
+}
+div.active{
+    display: block;
 }
